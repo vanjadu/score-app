@@ -1,0 +1,42 @@
+@import '../../styles/_variables'
+
+.single-match
+    width: 700px
+    background-color: lighten($off-black, 8%)
+    height: 300px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: $radius
+    padding: .3rem
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07)
+    &__status
+        text-transform: uppercase
+        font-size: .9rem
+        letter-spacing: 2px
+        opacity: .7
+    &__teams
+        margin-top: 2rem
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 0 1.5rem
+    &__team
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__info
+        display: flex
+        align-items: center
+        gap: 1.5rem
+    &__avatar
+        width: 4rem
+        max-width: 4rem
+        object-fit: cover
+    &__name
+        font-size: 1.4rem
+    &__score
+        font-size: 4rem
+        font-weight: 900
+        opacity: .6

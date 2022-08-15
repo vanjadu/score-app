@@ -1,0 +1,43 @@
+@import '../../styles/_variables'
+
+// card that displays avatar and title
+.single-league
+    width: 250px
+    height: 260px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 1rem
+    border-radius: $radius
+    background-color: lighten($off-black, 5%)
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07)
+    cursor: pointer
+    &:hover
+        background-color: lighten($off-black, 10%)
+        .single-league__sport
+            opacity: 1
+    &__avatar
+        width: 4rem
+        max-width: 4rem
+        margin-bottom: 1rem
+        object-fit: cover
+    &__title
+        font-size: 1.2rem
+        text-align: center
+        color: $accent
+    &__sport
+        font-size: 1rem
+        opacity: .5
+        margin-top: .3rem
+    &__cta
+        display: flex
+        align-items: center
+        margin-top: .3rem
+        &:hover
+            text-decoration: underline
+            .single-league__icon
+                color: $accent
+    &__icon
+        font-size: 1.2rem
+        margin-left: .3rem
